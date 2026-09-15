@@ -59,6 +59,19 @@ class StudyTime
 
     cout << "Total: " << total.getMinutes() << " minutes" << endl;
     cout << "Objects created: " << StudyTime::getObjectCount() << endl;
+    
+    StudyTime copyTest = reading;
 
+    StudyTime assignmentTest;
+
+    assignmentTest = reading; 
+
+    cout << "Final object count: "
+            << StudyTime::getObjectCount() << endl;
+    cout << "copyTest: "
+            << copyTest.getMinutes() << " minutes" << endl;
+    cout << "assignmentTest: "
+            << assignmentTest.getMinutes() << " minutes" << endl;
+            
             return 0;
         }
