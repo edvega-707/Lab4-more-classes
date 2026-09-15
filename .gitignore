@@ -1,7 +1,7 @@
 # compiled executables (Windows)
 *.exe
 
-# compiled executables (Mac/Linux)
+#
 study_time
 course_section
 inheritance_preview
