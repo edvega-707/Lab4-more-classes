@@ -39,7 +39,11 @@ class StudyTime
                 // Return a new duration without changing either operand.
                 return StudyTime(minutes + other.minutes);
                 }
-                
+            //---Parte E
+
+            bool operator==(const StudyTime &other) const {
+                return minutes == other.minutes;
+            }
         };
 
         int StudyTime::objectCount = 0;     // define the single shared variable.
@@ -73,5 +77,17 @@ class StudyTime
     cout << "assignmentTest: "
             << assignmentTest.getMinutes() << " minutes" << endl;
             
-            return 0;
+    // Parte E - Test equality operator
+
+    StudyTime time1(45);
+    StudyTime time2(45);
+    StudyTime time3(30);
+
+    cout << boolalpha;
+
+    cout << "time1 == time2: " << (time1 == time2) << endl;
+    cout << "time1 == time3: " << (time1 == time3) << endl;        
+            
+    return 0;
         }
+        
