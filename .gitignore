@@ -10,4 +10,4 @@ inheritance_preview
 *.o
 
 # editor configuration
-.vscode/
+.vscode/;
